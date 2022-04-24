@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- BEGIN WEBSITE -->
+<html>
+<head>
+	<title>OatsFX | Ryan > About Me</title>
+	<link rel="stylesheet" href="../style.css">
+	<link rel="icon" href="../images/OatsFX-Logo-Colored.png">
+	<script src="../js/jquery-3.6.0.min.js"></script>
+	<script>
+		$(window).scroll(function () {
+			if ($(document).scrollTop() > 50) {
+				$('.navbar').addClass('filled');
+			} else {
+				$('.navbar').removeClass('filled');
+			}
+		});
+	</script>
+</head>
+
+<header>
+	<div class="navbar">
+		<img src="../images/OatsFX-Logo-Colored.png" class="logo">
+		<nav>
+			<ul>
+				<li><a href="../">Home</a></li>
+				<li><a href="/">About Me</a></li>
+				<li><a href="../links/">Links</a></li>
+				<li><a href="https://www.behance.net/oatsfx" target="_blank">Portfolio</a></li>
+				<li><a href="javascript:switchTheme()" id="darkModeToggle">Dark Mode?</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<body>
+	<div class="container">
+		<!-- CONTENT -->
+		<div class="head-content">
+			<h1>Greetings!</h1>
+			<p>I am OatsFX, but go by Ryan for some. I am currently 19 years old and located in Arizona, USA.</p>
+		</div>
+		<div class="content">
+			<h2>Stuff I Do</h2>
+			<p>I strive to expand my knowledge by taking on new things and interests.</p>
+			<ul>
+				<li><b>Video Games</b> - This one is probably a little too much. I'm really enjoying Destiny 2, VALORANT, Geometry Dash, and Bloons TD 6.</li>
+				<li><b>Graphic Design</b> - During my early teenage years, I picked up programs such as Blender and Adobe After Effects. I really enjoyed using these programs for 3D art and animation. My portfolio can be found here.</li>
+				<li><b>Programming and Software Development</b> - This is what I'm currently studying in college, specifically a BS in Computer Science. Currently on my second year at Arizona State University and plan to graduate in Spring 2024.</li>
+				<li><b>Content Creation</b> - <em>Occasionally</em>, you'll see me upload a <a href="https://www.youtube.com/oatsfx" target="_blank">YouTube</a> video or go live on <a href="https://www.twitch.tv/oatsfx" target="_blank">Twitch</a>. This occurs whenever I feel like and isn't considered my main focus.</li>
+				<li><b>Music Production</b> - This one is very passion-based. I am a killer for a nice beat; music pretty much runs my life. I dabble in my own music tastes just to hear something different. Some of my work does hit <a href="https://soundcloud.com/oatsfx" target="_blank">SoundCloud</a> and sometimes <a href="https://www.youtube.com/oatsfx" target="_blank">YouTube</a>.</li>
+			</ul>
+		</div>
+		<div class="content">
+			<h2>Semi-personal Favorites</h2>
+			<p>Like most, I have favorite things.</p>
+			<ul>
+				<li><b>Video Game</b> - Destiny 2, VALORANT</li>
+				<li><b>Music</b> - I really enjoy getting slapped in the face with some Slap House, but I'll enjoy some good Lo-Fi or decent Pop. <em>I've got <a href="https://open.spotify.com/user/oatsfx." target="_blank">Spotify Playlists</a> ;)</em></li>
+				<li><b>TV Series</b> - Loki, The Mandolorian, The Boys, Black Mirror. You throw a Marvel show at me, I'll watch it. <em>I'm behind on the previously Netflix-owned shows, don't hate me.</em></li>
+				<li><b>Movies</b> - Star Wars (not getting into a debate on which movie is best), Tenet, Interstellar. Marvel didn't make it, but I still enjoy those.</li>
+				<li><b>Colors</b> - <em class="color-blue">#1995FF</em> and <em class="color-pink">#EA3381</em>.</li>
+			</ul>
+		</div>
+		<div class="content">
+			<h2>Where to reach me?</h2>
+			<p>I have most Social Media platforms.</p>
+			<ul>
+				<li><b>Twitter</b> - <a href="https://twitter.com/OatsFX" target="_blank">@OatsFX</a></li>
+				<li><b>Discord</b> - Join my <a href="https://discord.gg/HXPU2W7" target="_blank">server</a> and message me from there.</li>
+			</ul>
+			<p>If you're looking for a link hub, that can be found <a href="../links/index.html">here</a>.</p>
+		</div>
+	</div>
+</body>
+
+<script>
+	const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+	if (currentTheme) {
+		document.documentElement.setAttribute('data-theme', currentTheme);
+
+		if (currentTheme === 'dark') {
+			document.documentElement.setAttribute('dark-mode', 'true')
+			document.getElementById("darkModeToggle").innerHTML = "Blind Mode?"
+		}
+	}
+</script>
+
+<script>
+	const darkModeBtn = document.getElementById('dark-mode-btn')
+	darkModeBtn.addEventListener("click", switchTheme)
+
+	function switchTheme(e) {
+		if (document.documentElement.getAttribute('dark-mode') === 'true'){
+			document.documentElement.setAttribute('data-theme', 'light')
+			localStorage.setItem('theme', 'light')
+			document.documentElement.setAttribute('dark-mode', 'false')
+			document.getElementById('darkModeToggle').innerHTML = "Dark Mode?"
+			console.log("lights on")
+		}
+		else{
+			document.documentElement.setAttribute('data-theme', 'dark')
+			localStorage.setItem('theme', 'dark')
+			document.documentElement.setAttribute('dark-mode', 'true')
+			document.getElementById("darkModeToggle").innerHTML = "Blind Mode?"
+			console.log("lights off")
+		}
+	}
+</script>
+</html>

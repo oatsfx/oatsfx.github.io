@@ -2,29 +2,83 @@
 <!-- BEGIN WEBSITE -->
 <html>
 <head>
-	<title>Levante</title>
+	<title>OatsFX | Ryan > Home</title>
 	<link rel="stylesheet" href="style.css">
-	<link rel="icon" href="images/Levante-Logo.png">
+	<link rel="icon" href="images/OatsFX-Logo-Colored.png">
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script>
+		$(window).scroll(function () {
+			if ($(document).scrollTop() > 50) {
+				$('.navbar').addClass('filled');
+			} else {
+				$('.navbar').removeClass('filled');
+			}
+		});
+	</script>
 </head>
+
+<header>
+	<div class="navbar">
+		<img src="images/OatsFX-Logo-Colored.png" class="logo">
+		<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="about-me/">About Me</a></li>
+				<li><a href="links/">Links</a></li>
+				<li><a href="https://www.behance.net/oatsfx" target="_blank">Portfolio</a></li>
+				<li><a href="javascript:switchTheme()" id="darkModeToggle">Dark Mode?</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
 
 <body>
 	<div class="container">
-		<div class="navbar">
-			<img src="images/Levante-Logo.png" class="logo">
-			<nav>
-				<ul>
-					<li><a href="">Commands</a></li>
-					<li><a href="https://discord.gg/Levante">Support Server</a></li>
-					<li><a href="">About Us</a></li>
-				</ul>
-			</nav>
-		</div>
 		<!-- CONTENT -->
+		<div class="head-content-centered">
+			<h1>Welcome!</h1>
+			<p>This is the official website of OatsFX.</p>
+			<p>This site is currently under construction, meaning it is not finished.</p>
+		</div>
 		<div class="content">
-			<h1>Levante Discord Bot</h1>
-			<p>Under Construction.</p>
-			<a href="https://discord.com/oauth2/authorize?client_id=882303133643047005&permissions=8&scope=applications.commands%20bot" class="btn">Add to Server</a>
+			<h2>What's here?</h2>
+			<p>This website is where you can find pretty much everything that I, OatsFX, do or have done.</p>
 		</div>
 	</div>
 </body>
+
+<script>
+	const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+	if (currentTheme) {
+		document.documentElement.setAttribute('data-theme', currentTheme);
+
+		if (currentTheme === 'dark') {
+			document.documentElement.setAttribute('dark-mode', 'true')
+			document.getElementById("darkModeToggle").innerHTML = "Blind Mode?"
+		}
+	}
+</script>
+
+<script>
+	const darkModeBtn = document.getElementById('dark-mode-btn')
+	darkModeBtn.addEventListener("click", switchTheme)
+
+	function switchTheme(e) {
+		if (document.documentElement.getAttribute('dark-mode') === 'true'){
+			document.documentElement.setAttribute('data-theme', 'light')
+			localStorage.setItem('theme', 'light')
+			document.documentElement.setAttribute('dark-mode', 'false')
+			document.getElementById('darkModeToggle').innerHTML = "Dark Mode?"
+			console.log("lights on")
+		}
+		else{
+			document.documentElement.setAttribute('data-theme', 'dark')
+			localStorage.setItem('theme', 'dark')
+			document.documentElement.setAttribute('dark-mode', 'true')
+			document.getElementById("darkModeToggle").innerHTML = "Blind Mode?"
+			console.log("lights off")
+		}
+	}
+</script>
 </html>
