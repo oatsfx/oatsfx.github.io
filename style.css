@@ -125,6 +125,8 @@ nav ul li a:hover{
 	background-color: none;
 	flex-direction: column;
 	padding-bottom: 2vh;
+	border-bottom: 0px solid;
+	border-image: linear-gradient(45deg, var(--oatsfx-pink), var(--oatsfx-blue)) 10;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -164,6 +166,7 @@ nav ul li a:hover{
 	margin-left: 8%;
 	margin-right: 8%;
 	margin-top: 3%;
+	padding-left: 1%;
 	border-top: 1px solid var(--oatsfx-blue);
 }
 
