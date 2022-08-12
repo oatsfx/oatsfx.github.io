@@ -89,6 +89,8 @@ nav ul li{
 nav ul li button{
 	text-decoration: none;
 	color: var(--oatsfx-fore);
+	border-bottom: 0px solid;
+	border-image: linear-gradient(45deg, var(--oatsfx-pink), var(--oatsfx-blue)) 2;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -103,6 +105,8 @@ nav ul li button:hover{
 nav ul li a{
 	text-decoration: none;
 	color: var(--oatsfx-fore);
+	border-bottom: 0px solid;
+	border-image: linear-gradient(45deg, var(--oatsfx-pink), var(--oatsfx-blue)) 2;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -160,6 +164,7 @@ nav ul li a:hover{
 	font-size: 18px;
 	margin-bottom: 5px;
 	font-weight: 200;
+	margin-left: 2%;
 }
 
 .content{
