@@ -20,6 +20,8 @@
 	--oatsfx-pink: #ea3381;
 
 	--dark-mode: 'false';
+
+	
 }
 
 .color-pink{
@@ -74,6 +76,18 @@ footer{
 	margin-bottom: 5%;
 	box-sizing: border-box;
 	position: relative;
+}
+
+.price-image-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.price-image {
+	width: 75%;
+	outline: 1px solid var(--oatsfx-fore);
+	max-width: 60rem;
 }
 
 nav{
@@ -167,12 +181,19 @@ nav ul li a:hover{
 	margin-left: 2%;
 }
 
+.head-content b {
+	font-weight: 400;
+	color: var(--oatsfx-blue);
+}
+
 .content{
 	margin-left: 8%;
 	margin-right: 8%;
 	margin-top: 3%;
 	padding-left: 1%;
 	border-top: 1px solid var(--oatsfx-blue);
+
+	scroll-margin-top: 8rem;
 }
 
 .head-content h1, .head-content-centered h1 {
@@ -220,7 +241,7 @@ a:hover{
 	font-weight: 200;
 }
 
-.content ul{
+.content ul {
 	font-size: 18px;
 	color: var(--oatsfx-fore);
 	margin-bottom: 5px;
