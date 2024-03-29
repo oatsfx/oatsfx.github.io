@@ -4,9 +4,9 @@ import { styled } from "@mui/material/styles";
 
 const App = () => {
   const currentBangers = [
-    "Tell Me (Ellis Remix) by Haywyre and ellis",
-    "Super Shy by NewJeans",
-    "I Don't Wanna Know by Friendzone",
+    'the entire "eternal sunshine" album',
+    "Friendships by Pascal Letoublon",
+    "Red Horizon by Creo",
   ];
 
   let currentBangersStr = "The things on repeat: ";
@@ -74,8 +74,8 @@ const App = () => {
         </div>
         <div className="content">
           <p>
-            I'm OatsFX, but Ryan for some, and I develop software, design,
-            produce music, and play video games. More on me below.
+            I'm OatsFX, but Ryan for some, and I develop software, design
+            graphics, produce music, and play video games. More on me below.
           </p>
           <p>English is my primary language - it is also my only language.</p>
         </div>
@@ -85,19 +85,19 @@ const App = () => {
         <div className="content">
           <ul>
             <li>
-              <b>Video Games</b> - I've been playing video games for as long as
-              I've been consicious.
-            </li>
-            <li>
               <b>Software Development</b> - Passion-driven study; I am working
               on my BS in Computer Science (Software Engineering) at Arizona
-              State. I am a fourth-year student and plan to graduate in Spring
+              State. I am a fourth-year student and will be graduating in Spring
               2024.
             </li>
             <li>
               <b>Graphic Design</b> - During my early teenage years, I picked up
               programs such as Blender and Adobe After Effects. I really enjoyed
               using these programs for 3D art and animation.
+            </li>
+            <li>
+              <b>Video Games</b> - I've been playing video games for as long as
+              I've been consicious.
             </li>
             <li>
               <b>Content Creation</b> - Occasionally, I upload a YouTube video -
@@ -133,6 +133,30 @@ const App = () => {
         <div className="content">
           <h2>
             <a
+              href="https://dev-analyzer.sivworks.com/income"
+              target="_blank"
+              className="sivworks-color"
+            >
+              Sivworks - Investment Web Application
+            </a>
+          </h2>
+          <p>
+            Automatic option tracking, backtesting, and organizing software for
+            all your stock option investing strategies!
+          </p>
+          <p>
+            An investment web application built using a React front-end and
+            Firebase back-end to allow users to practice various investment
+            strategies.
+          </p>
+          <p>
+            I had the opportunity to be a part of development for this
+            application during my final year of my college career.
+          </p>
+        </div>
+        <div className="content">
+          <h2>
+            <a
               href="https://youknowihadtodoubleit.com/"
               target="_blank"
               className="double-it-color"
@@ -145,22 +169,6 @@ const App = () => {
             A React web app that is a learning platform for myself and a couple
             friends.
           </p>
-        </div>
-        <div className="content">
-          <h2>
-            <a
-              href="https://d2.oatsfx.com/"
-              target="_blank"
-              className="double-it-color"
-            >
-              d2.oatsfx.com
-            </a>
-          </h2>
-          <p>
-            ANOTHER Destiny 2 web application that does stuff all of the other
-            ones do!
-          </p>
-          <p>Another React learning platform for myself.</p>
         </div>
         <div className="divider">
           <span>stuff i enjoy</span>
@@ -175,8 +183,8 @@ const App = () => {
               Slap/Club House), Lo-Fi. {currentBangersStr}.
             </li>
             <li>
-              <b>TV Series</b> - Star Wars: The Clone Wars, Loki, The Boys,
-              Black Mirror, Wednesday
+              <b>TV Series</b> - Avatar: The Last Airbender (Cartoon), Star
+              Wars: The Clone Wars, Loki, The Boys, Black Mirror, Wednesday
             </li>
             <li>
               <b>Movies</b> - Star Wars, Tenet, Interstellar, Inception, Marvel

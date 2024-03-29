@@ -66,8 +66,8 @@ const BuildHeader = () => {
       <img src={Logo} className="logo" />
       <nav>
         <Link to={"/"}>Home</Link>
-        <Link to={"/commissions/"}>Commissions</Link>
         <Link to={"/portfolio/"}>Portfolio</Link>
+        <Link to={"/commissions/"}>Commissions</Link>
         <Link onClick={toggleDark}>
           {currentTheme === "light" ? "Dark Mode?" : "Blind Mode?"}
         </Link>

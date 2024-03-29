@@ -46,7 +46,7 @@ const App = () => {
       name: "Portfolio Item 2",
       promoImage: "./portfolio-images/strand-hunter.png",
       description:
-        "CHIPI CHIPI CHAPA CHAPA DUBI DUBI DABA DABA MAGICO MI DUBI DUBI BOOM BOOM BOOM BOOM",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       promoLink: "",
       tags: ["Destiny2", "Blender", "3D"],
     },
@@ -54,7 +54,7 @@ const App = () => {
       name: "Portfolio Item 3",
       promoImage: "./portfolio-images/strand-hunter.png",
       description:
-        "The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       promoLink: "",
       tags: ["Destiny2", "Blender", "3D"],
     },
