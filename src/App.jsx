@@ -4,9 +4,8 @@ import { styled } from "@mui/material/styles";
 
 const App = () => {
   const currentBangers = [
-    'the entire "eternal sunshine" album',
-    "Friendships by Pascal Letoublon",
-    "Red Horizon by Creo",
+    'the entire "eternal sunshine" album by Ariana Grande',
+    "FUCK ABOUT IT (feat. blackbear) by Waterparks",
   ];
 
   let currentBangersStr = "The things on repeat: ";
@@ -85,10 +84,9 @@ const App = () => {
         <div className="content">
           <ul>
             <li>
-              <b>Software Development</b> - Passion-driven study; I am working
-              on my BS in Computer Science (Software Engineering) at Arizona
-              State. I am a fourth-year student and will be graduating in Spring
-              2024.
+              <b>Software Development</b> - Passion-driven study; I am a college
+              graduate from Arizona State and have achieved a BS in Computer
+              Science (Software Engineering) in May of 2024.
             </li>
             <li>
               <b>Graphic Design</b> - During my early teenage years, I picked up
