@@ -5,7 +5,8 @@ import { styled } from "@mui/material/styles";
 const App = () => {
   const currentBangers = [
     'the entire "eternal sunshine" album by Ariana Grande',
-    "FUCK ABOUT IT (feat. blackbear) by Waterparks",
+    "Espresso by Sabrina Carpenter",
+    "Determinate by Lemonade Mouth",
   ];
 
   let currentBangersStr = "The things on repeat: ";
@@ -114,6 +115,19 @@ const App = () => {
         <div className="content">
           <h2>
             <a
+              href="https://winnow.oatsfx.com/"
+              target="_blank"
+              className="levante-color"
+            >
+              winnow
+            </a>
+          </h2>
+          <p>A web app that has Destiny 2 related actions and information.</p>
+          <p>A web utility built using TypeScript and React.</p>
+        </div>
+        <div className="content">
+          <h2>
+            <a
               href="https://levante.dev/"
               target="_blank"
               className="levante-color"
@@ -174,7 +188,8 @@ const App = () => {
         <div className="content">
           <ul>
             <li>
-              <b>Video Games</b> - Pokémon, Bloons TD 6, Geometry Dash
+              <b>Video Games</b> - Bloons TD 6, Destiny 2, Pokémon, Geometry
+              Dash
             </li>
             <li>
               <b>Music</b> - Pop, EDM (sub-genres to mention: Midtempo,
