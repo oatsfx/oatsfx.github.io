@@ -117,7 +117,7 @@ const App = () => {
             <a
               href="https://winnow.oatsfx.com/"
               target="_blank"
-              className="levante-color"
+              className="winnow-color"
             >
               winnow
             </a>

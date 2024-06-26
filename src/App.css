@@ -95,11 +95,22 @@
   --oatsfx-fore: #181b1e;
   --oatsfx-blue: #1995ff;
   --oatsfx-pink: #ea3381;
+  --winnow: #507bf2;
   --levante: #80ccbf;
   --double-it: #c59fc9;
   --sivworks: #3e6be8;
 
   --font-display: "VastagoGrotesk";
+}
+
+.winnow-color {
+  border-bottom: 0px solid var(--winnow);
+  color: var(--winnow);
+}
+
+.winnow-color:hover {
+  letter-spacing: 0.4px;
+  border-bottom: 2px solid;
 }
 
 .levante-color {
