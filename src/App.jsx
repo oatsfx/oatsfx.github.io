@@ -188,8 +188,7 @@ const App = () => {
         <div className="content">
           <ul>
             <li>
-              <b>Video Games</b> - Bloons TD 6, Destiny 2, Pokémon, Geometry
-              Dash
+              <b>Video Games</b> - Bloons TD 6, Destiny 2, Pokémon
             </li>
             <li>
               <b>Music</b> - Pop, EDM (sub-genres to mention: Midtempo,
@@ -217,40 +216,10 @@ const App = () => {
         <div className="content">
           <ul>
             <li>
-              <b>Twitter</b> -{" "}
-              <a
-                className="small-a"
-                href="https://twitter.com/OatsFX"
-                target="_blank"
-              >
-                @OatsFX
-              </a>
-            </li>
-            <li>
               <b>GitHub</b> -{" "}
               <a
                 className="small-a"
                 href="https://github.com/OatsFX"
-                target="_blank"
-              >
-                OatsFX
-              </a>
-            </li>
-            <li>
-              <b>YouTube</b> -{" "}
-              <a
-                className="small-a"
-                href="https://youtube.com/@OatsFX"
-                target="_blank"
-              >
-                OatsFX
-              </a>
-            </li>
-            <li>
-              <b>Twitch</b> -{" "}
-              <a
-                className="small-a"
-                href="https://twitch.com/OatsFX"
                 target="_blank"
               >
                 OatsFX
