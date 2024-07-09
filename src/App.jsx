@@ -91,8 +91,9 @@ const App = () => {
             </li>
             <li>
               <b>Graphic Design</b> - During my early teenage years, I picked up
-              programs such as Blender and Adobe After Effects. I really enjoyed
-              using these programs for 3D art and animation.
+              programs such as Blender, Adobe Photoshop, Illustrator, and After
+              Effects. I really enjoyed using these programs for 2D/3D art and
+              animation.
             </li>
             <li>
               <b>Video Games</b> - I've been playing video games for as long as
@@ -206,6 +207,64 @@ const App = () => {
             <li>
               <b>Colors</b> - <a style={{ color: "#1995ff" }}>#1995FF</a> and{" "}
               <a style={{ color: "#EA3381" }}>#EA3381</a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="divider">
+          <span>achievements</span>
+        </div>
+        <div className="content">
+          <ul>
+            <li>
+              <b>Charity</b> - Raised over $3,000 for the Bungie Foundation
+              through my Levante project.
+            </li>
+            <li>
+              <b>Robotics</b> - Qualified for the VeX Worlds Competition during
+              the Tower Takeover game in 2019-2020.
+            </li>
+            <li>
+              <b>Academics</b> - Received the Moeur Award from ASU upon
+              graduation and was selected for Dean's list for all eight of my
+              undergraduate semesters.
+            </li>
+            <li>
+              <b>Content Features</b> - Bungie has featured many of my video and
+              design works on their blogs.
+              <div style={{ paddingLeft: 32 }}>
+                <a
+                  href="https://www.bungie.net/7/en/News/article/50802"
+                  target="_blank"
+                  className="small-a"
+                >
+                  Art 1
+                </a>
+                <br />
+                <a
+                  href="https://www.bungie.net/7/en/News/article/47767"
+                  target="_blank"
+                  className="small-a"
+                >
+                  Video 1
+                </a>
+                <br />
+                <a
+                  href="https://www.bungie.net/7/en/News/article/50975"
+                  target="_blank"
+                  className="small-a"
+                >
+                  Video 2
+                </a>
+                <br />
+                <a
+                  href="https://www.bungie.net/7/en/News/article/twid_09_14_2023"
+                  target="_blank"
+                  className="small-a"
+                >
+                  Video 3
+                </a>
+              </div>
             </li>
           </ul>
         </div>
