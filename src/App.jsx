@@ -217,17 +217,17 @@ const App = () => {
         <div className="content">
           <ul>
             <li>
-              <b>Charity</b> - Raised over $3,000 for the Bungie Foundation
-              through my Levante project.
+              <b>Charity</b> - Raised over a total of $4,500 for the Bungie
+              Foundation through my Levante project.
             </li>
             <li>
               <b>Robotics</b> - Qualified for the VeX Worlds Competition during
               the Tower Takeover game in 2019-2020.
             </li>
             <li>
-              <b>Academics</b> - Received the Moeur Award from ASU upon
-              graduation and was selected for Dean's list for all eight of my
-              undergraduate semesters.
+              <b>Academics</b> - Received a 4.0 GPA and the Moeur Award from ASU
+              upon graduation and was selected for Dean's list for all eight of
+              my undergraduate semesters.
             </li>
             <li>
               <b>Content Features</b> - Bungie has featured many of my video and
