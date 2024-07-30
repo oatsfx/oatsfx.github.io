@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f64f5b9d.css",
-    "main.js": "/static/js/main.fb5e8efc.js",
+    "main.js": "/static/js/main.d52f3649.js",
     "static/js/787.383d5006.chunk.js": "/static/js/787.383d5006.chunk.js",
     "static/media/PRICING_2023.png": "/static/media/PRICING_2023.e8bd8404a22ad37af47f.png",
     "static/media/Background-1.png": "/static/media/Background-1.339f4b721f64a1b40492.png",
@@ -26,11 +26,11 @@
     "static/media/kanit-thin.otf": "/static/media/kanit-thin.b58934f6ade75e3214d9.otf",
     "index.html": "/index.html",
     "main.f64f5b9d.css.map": "/static/css/main.f64f5b9d.css.map",
-    "main.fb5e8efc.js.map": "/static/js/main.fb5e8efc.js.map",
+    "main.d52f3649.js.map": "/static/js/main.d52f3649.js.map",
     "787.383d5006.chunk.js.map": "/static/js/787.383d5006.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f64f5b9d.css",
-    "static/js/main.fb5e8efc.js"
+    "static/js/main.d52f3649.js"
   ]
 }
