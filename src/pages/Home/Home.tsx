@@ -5,6 +5,7 @@ import {
   BiLogoJavascript,
   BiLogoPython,
   BiLogoTypescript,
+  BiSolidChevronUpCircle,
 } from "react-icons/bi";
 import {
   BsGithub,
@@ -13,6 +14,7 @@ import {
   BsArrowDownShort,
   BsPersonFill,
   BsFillFileEarmarkCodeFill,
+  BsTwitter,
 } from "react-icons/bs";
 import { FaTrophy } from "react-icons/fa";
 import {
@@ -24,19 +26,40 @@ import {
   SiAdobeillustrator,
   SiCplusplus,
   SiJira,
+  SiKofi,
 } from "react-icons/si";
 
 const Home: React.FC = () => {
+  const [scroll, setScroll] = useState<number>(0);
+
+  window.addEventListener("scroll", () => {
+    setScroll(document.documentElement.scrollTop as number);
+  });
+
   useEffect(() => {}, []);
 
   return (
     <div className="flex flex-col w-full">
+      <p></p>
+      <BiSolidChevronUpCircle
+        onClick={() => {
+          window.scroll({
+            top: 0,
+            behavior: "smooth",
+          });
+        }}
+        className={
+          "transition fixed bottom-[5%] left-[92%] z-50 cursor-pointer text-base-100" +
+          (scroll > 300 ? " opacity-100" : " opacity-0")
+        }
+        size={48}
+      />
       <div className="flex flex-col min-h-screen items-center justify-center">
         <div className="flex flex-col w-full h-full items-center justify-center gap-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1540 747"
-            className="absolute -z-50 top-[225px] animate-move-fade"
+            className="absolute -z-50 top-[225px] min-w-[110rem] max-w-[110rem] animate-move-fade"
             fill="currentColor"
           >
             <path d="M1019.52,224.28c98.97,123.27,93.79,314-35.72,431.94-129.07,117.53-327.83,108.76-447.08-20.42-115.54-125.15-103.38-304.78-15.2-411.29,64.95,77.32,147.41,119.44,248.85,119.46,101.46.02,183.94-42.07,249.15-119.69Z" />
@@ -56,14 +79,14 @@ const Home: React.FC = () => {
             <path d="M770.27.03c73.19-1.44,140.37,58.71,140.67,140.05.29,77.47-62.52,140.41-140.33,140.64-77.55.22-140.58-62.51-140.63-140.3C629.92,59.03,697.14-1.25,770.27.03Z" />
           </svg>
 
-          <p className="font-display text-4xl font-bold italic animate-fade-lg pb-1">
+          <p className="font-display tracking-wide text-4xl font-semibold italic animate-fade-lg pb-1">
             OatsFX
           </p>
           <div className="flex flex-col md:flex-row gap-4 animate-fade-xl px-8 text-nowrap">
-            <p className="font-display italic">Software Engineer</p>
-            <p className="font-display italic">Computer Scientist</p>
-            <p className="font-display italic">Graphic/Motion Designer</p>
-            <p className="font-display italic">Music Producer</p>
+            <p className="italic">Software Engineer</p>
+            <p className="italic">Computer Scientist</p>
+            <p className="italic">Graphic/Motion Designer</p>
+            <p className="italic">Music Producer</p>
           </div>
           <div className="flex gap-4 animate-fade-xl items-center">
             <a
@@ -80,6 +103,13 @@ const Home: React.FC = () => {
             >
               <BsYoutube size={22} />
             </a>
+            {/* <a
+              href="https://twitter.com/OatsFX"
+              target="_blank"
+              className="transition hover:text-secondary"
+            >
+              <BsTwitter size={22} />
+            </a> */}
             <a
               href="https://behance.com/OatsFX"
               target="_blank"
@@ -87,26 +117,40 @@ const Home: React.FC = () => {
             >
               <BsBehance size={22} />
             </a>
+            <a
+              href="https://ko-fi.com/OatsFX"
+              target="_blank"
+              className="transition hover:text-secondary"
+            >
+              <SiKofi size={22} />
+            </a>
           </div>
         </div>
         <BsArrowDownShort
           size={80}
+          onClick={() => {
+            const element = document.getElementById("info");
+            element?.scrollIntoView({ behavior: "smooth" });
+          }}
           className="animate-bounce hover:[animation-play-state:paused] hover:cursor-pointer"
         />
       </div>
 
-      <div className="flex flex-col bg-neutral text-base-100 w-full items-center py-6 gap-20">
+      <div
+        className="flex flex-col bg-neutral text-base-100 w-full items-center py-6 gap-20"
+        id="info"
+      >
         <div className="flex flex-col w-2/3">
           {/* <p className="font-black text-9xl tracking-wider absolute right-[225px] text-right -bottom-[300px] opacity-5">
             ABOUT
           </p> */}
 
-          <p className="flex gap-2 font-bold items-center text-2xl tracking-wide">
+          <p className="font-display flex gap-2 font-bold items-center text-2xl tracking-wide">
             <BsPersonFill size={24} />
             ABOUT
           </p>
-          <div className="flex gap-4 px-4 py-2 justify-between">
-            <p className="w-2/3">
+          <div className="flex flex-col lg:flex-row gap-4 px-4 py-2 items-center lg:items-start justify-between">
+            <p className="w-full lg:w-2/3">
               Known as OatsFX online, I am personally known as Ryan. I am a
               Software Engineering focused Computer Science graduate with a
               strong passion for developing full-stack applications. I have
@@ -142,22 +186,22 @@ const Home: React.FC = () => {
           </div>
         </div>
         <div className="flex flex-col w-2/3">
-          <p className="flex gap-2 font-bold items-center text-2xl tracking-wide">
+          <p className="font-display flex gap-2 font-bold items-center text-2xl tracking-wide">
             <BsFillFileEarmarkCodeFill size={24} />
             PROJECTS
           </p>
-          <div className="flex flex-inline gap-4 px-4 py-2">
-            <div className="flex flex-col w-1/3 px-4 py-2 rounded-xs outline">
+          <div className="flex flex-col lg:flex-row flex-inline gap-4 px-4 py-2">
+            <div className="flex flex-col w-full px-4 py-2 rounded-xs outline outline-1">
               <p className="font-semibold">winnow</p>
               <p className="text-sm">Typescript, React</p>
               <p className="text-xs">June 2024 - Present</p>
             </div>
-            <div className="flex flex-col w-1/3 px-4 py-2 rounded-xs outline">
+            <div className="flex flex-col w-full px-4 py-2 rounded-xs outline outline-1">
               <p className="font-semibold">Levante</p>
               <p className="text-sm">C#</p>
               <p className="text-xs">August 2021 - Present</p>
             </div>
-            <div className="flex flex-col w-1/3 px-4 py-2 rounded-xs outline">
+            <div className="flex flex-col w-full px-4 py-2 rounded-xs outline outline-1">
               <p className="font-semibold">
                 Sivworks - Investment Web Application
               </p>
@@ -167,11 +211,11 @@ const Home: React.FC = () => {
           </div>
         </div>
         <div className="flex flex-col w-2/3">
-          <p className="flex gap-2 font-bold items-center text-2xl tracking-wide">
+          <p className="font-display flex gap-2 font-bold items-center text-2xl tracking-wide">
             <FaTrophy size={24} />
             ACHIEVEMENTS
           </p>
-          <div className="flex gap-4 px-4 py-2">
+          <div className="flex flex-col lg:flex-row flex-inline gap-4 px-4 py-2">
             <p>
               I've used my platforms for good and raised over $4,500 for the
               Bungie Foundation.
