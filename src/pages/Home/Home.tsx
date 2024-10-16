@@ -73,7 +73,7 @@ const Home: React.FC = () => {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1540 747"
-            className="w-28 animate-fade"
+            className="w-28 animate-fade text-neutral"
             fill="currentColor"
           >
             <path d="M1017.98,225.1c82.29,94.79,105.53,275.34-11.54,406.88-118.53,133.18-322.96,142.54-453.36,20.42-131.33-122.99-125.48-314.76-31.89-427.66,65.04,77,147.4,119.09,248.75,119.03,101.04-.06,183.14-41.96,248.04-118.66Z" />
@@ -84,21 +84,21 @@ const Home: React.FC = () => {
             <path d="M1459.07,234.52l-302.81,211.22c-2.21,35.51-9.24,70.29-21.03,103.75-16.66,47.29-42.4,90.7-76.5,129.02-3.62,4.06-7.3,8.03-11.06,11.92l321.02,56.6,90.37-512.52Z" />
           </svg>
 
-          <p className="font-display tracking-wide text-4xl font-semibold italic animate-fade-lg pb-1">
+          <p className="font-display tracking-wide text-4xl text-neutral font-semibold italic animate-fade-lg pb-1">
             OatsFX
           </p>
           <div className="flex flex-col md:flex-row gap-4 animate-fade-xl px-8 text-nowrap">
-            <p className="italic">Software Engineer</p>
-            <p className="italic">Computer Scientist</p>
-            <p className="italic">Graphic/Motion Designer</p>
-            <p className="italic">Music Producer</p>
+            <p className="italic text-neutral">Software Engineer</p>
+            <p className="italic text-neutral">Computer Scientist</p>
+            <p className="italic text-neutral">Graphic/Motion Designer</p>
+            <p className="italic text-neutral">Music Producer</p>
           </div>
           <div className="flex gap-4 animate-fade-xl items-center">
             <a
               href="https://github.com/OatsFX"
               target="_blank"
               rel="noreferrer"
-              className="transition hover:text-secondary"
+              className="transition text-neutral hover:text-secondary"
             >
               <BsGithub size={22} />
             </a>
@@ -106,14 +106,14 @@ const Home: React.FC = () => {
               href="https://youtube.com/@oatsfx"
               target="_blank"
               rel="noreferrer"
-              className="transition hover:text-secondary"
+              className="transition text-neutral hover:text-secondary"
             >
               <BsYoutube size={22} />
             </a>
             {/* <a
               href="https://twitter.com/OatsFX"
               target="_blank"
-              className="transition hover:text-secondary"
+              className="transition text-neutral hover:text-secondary"
             >
               <BsTwitter size={22} />
             </a> */}
@@ -121,7 +121,7 @@ const Home: React.FC = () => {
               href="https://behance.com/OatsFX"
               target="_blank"
               rel="noreferrer"
-              className="transition hover:text-secondary"
+              className="transition text-neutral hover:text-secondary"
             >
               <BsBehance size={22} />
             </a>
@@ -129,7 +129,7 @@ const Home: React.FC = () => {
               href="https://ko-fi.com/OatsFX"
               target="_blank"
               rel="noreferrer"
-              className="transition hover:text-secondary"
+              className="transition text-neutral hover:text-secondary"
             >
               <SiKofi size={22} />
             </a>
@@ -263,7 +263,7 @@ const Home: React.FC = () => {
 
           <div className="flex flex-col lg:flex-row flex-inline gap-4 px-4 py-2">
             <p>
-              Recipient of Ira A. Fulton School of Engineering's{" "}
+              Recipient of ASU's Ira A. Fulton School of Engineering's{" "}
               <span className="text-primary font-bold">Moeur Award</span> for{" "}
               <span className="text-secondary">
                 outstanding academic achievement
@@ -271,7 +271,7 @@ const Home: React.FC = () => {
               .
             </p>
             <p>
-              Made the Ira A. Fulton School of Engineering{" "}
+              Made the ASU's Ira A. Fulton School of Engineering{" "}
               <span className="text-primary font-bold">Dean's List</span> in
               eight consecutive semesters for{" "}
               <span className="text-secondary">outstanding academics</span>.
@@ -285,9 +285,9 @@ const Home: React.FC = () => {
           <div className="flex flex-col lg:flex-row flex-inline gap-4 px-4 py-2">
             <p>
               I've used my platforms for good and raised over{" "}
-              <span className="text-primary font-bold">$4,500</span> for the{" "}
+              <span className="text-primary font-bold">$5,000</span> for the{" "}
               <a
-                href="https://bungiefoundation.org/"
+                href="https://tiltify.com/@levante/profile"
                 target="_blank"
                 rel="noreferrer"
                 className="text-secondary"
