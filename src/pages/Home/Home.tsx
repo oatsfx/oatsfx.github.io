@@ -201,6 +201,23 @@ const Home: React.FC = () => {
           </p>
           <div className="flex flex-col lg:flex-row flex-inline gap-4 px-4 py-2">
             <a
+              href="https://btd6.oatsfx.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="flex flex-col w-full px-4 py-2 outline outline-transparent transition-all ease-in-out border-b border-base-100 hover:outline-1 hover:outline-base-100"
+            >
+              <div className="flex justify-between">
+                <div>
+                  <p className="font-semibold">OatsFX btd6 tool</p>
+                  <p className="text-xs">November 2024 - Present</p>
+                </div>
+                <div className="flex gap-1 flex-wrap justify-end">
+                  <BiLogoTypescript size={36} />
+                  <SiReact size={36} />
+                </div>
+              </div>
+            </a>
+            <a
               href="https://winnow.oatsfx.com/"
               target="_blank"
               rel="noreferrer"
@@ -233,11 +250,13 @@ const Home: React.FC = () => {
                 </div>
               </div>
             </a>
+          </div>
+          <div className="flex flex-col items-center justify-center lg:flex-row flex-inline gap-4 px-4 py-2">
             <a
               href="https://dev-analyzer.sivworks.com/"
               target="_blank"
               rel="noreferrer"
-              className="flex flex-col w-full px-4 py-2 outline outline-transparent transition-all ease-in-out border-b border-base-100 hover:outline-1 hover:outline-base-100"
+              className="flex flex-col w-full lg:w-2/3 px-4 py-2 outline outline-transparent transition-all ease-in-out border-b border-base-100 hover:outline-1 hover:outline-base-100"
             >
               <div className="flex justify-between">
                 <div>
