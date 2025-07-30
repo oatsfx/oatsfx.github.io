@@ -1,3 +1,5 @@
+import { OatsFXLogo } from "components/OatsFXLogo";
+import ProjectButton from "components/ProjectButton/ProjectButton";
 import { useEffect, useState } from "react";
 import {
   BiLogoFigma,
@@ -33,6 +35,57 @@ import {
 const Home: React.FC = () => {
   const [scroll, setScroll] = useState<number>(0);
 
+  const projects = [
+    {
+      name: "OatsFX btd6 tool",
+      dateString: "November 2024 - Present",
+      endContent: (
+        <>
+          <BiLogoTypescript size={36} />
+          <SiReact size={36} />
+        </>
+      ),
+      href: "https://btd6.oatsfx.com/",
+      disabled: false,
+    },
+    {
+      name: "winnow",
+      dateString: "June 2024 - Present",
+      endContent: (
+        <>
+          <BiLogoTypescript size={36} />
+          <SiReact size={36} />
+        </>
+      ),
+      href: "https://winnow.oatsfx.com/",
+      disabled: false,
+    },
+    {
+      name: "Levante",
+      dateString: "August 2021 - Present",
+      endContent: (
+        <>
+          <SiCsharp size={36} />
+        </>
+      ),
+      href: "https://levante.dev/",
+      disabled: false,
+    },
+    {
+      name: "Sivworks - Investment Web Application",
+      dateString: "September 2023 - May 2024",
+      endContent: (
+        <>
+          <BiLogoTypescript size={36} />
+          <SiReact size={36} />
+          <BiLogoFirebase size={36} />
+        </>
+      ),
+      href: "",
+      disabled: true,
+    },
+  ];
+
   window.addEventListener("scroll", () => {
     setScroll(document.documentElement.scrollTop as number);
   });
@@ -41,7 +94,6 @@ const Home: React.FC = () => {
 
   return (
     <div className="flex flex-col w-full">
-      <p></p>
       <BiSolidChevronUpCircle
         onClick={() => {
           window.scroll({
@@ -50,39 +102,18 @@ const Home: React.FC = () => {
           });
         }}
         className={
-          "transition fixed bottom-[5%] left-[92%] z-50 cursor-pointer text-base-100" +
+          "transition fixed bottom-[5%] right-[2rem] md:right-[4rem] z-50 cursor-pointer text-base-100" +
           (scroll > 300 ? " opacity-100" : " opacity-0")
         }
         size={48}
       />
       <div className="flex flex-col min-h-screen items-center justify-center">
         <div className="flex flex-col w-full h-full items-center justify-center gap-1">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
+          <OatsFXLogo
             viewBox="192 0 1155 747"
             className="absolute -z-50 top-[250px] overflow-x-hidden animate-move-fade"
-            fill="currentColor"
-          >
-            <path d="M1017.98,225.1c82.29,94.79,105.53,275.34-11.54,406.88-118.53,133.18-322.96,142.54-453.36,20.42-131.33-122.99-125.48-314.76-31.89-427.66,65.04,77,147.4,119.09,248.75,119.03,101.04-.06,183.14-41.96,248.04-118.66Z" />
-            <path d="M910.09,140.02c.2,77.49-62.57,140.57-140.05,140.76-77.36.19-140.48-62.78-140.59-140.23C629.34,62.87,691.86.14,769.51,0c77.71-.14,140.38,62.28,140.58,140.02Z" />
-            <path d="M194.11,237.24c.14,53.6-43.28,97.23-96.87,97.36C43.74,334.74.07,291.19,0,237.61c-.07-53.73,43.17-97.12,96.88-97.22,53.75-.09,97.1,43.08,97.24,96.85Z" />
-            <path d="M1345.42,237.24c-.14,53.6,43.28,97.23,96.87,97.36,53.5.13,97.17-43.42,97.24-97,.07-53.73-43.17-97.12-96.88-97.22-53.75-.09-97.1,43.08-97.24,96.85Z" />
-            <path d="M383.28,445.74L80.47,234.52l90.37,512.52,321.08-56.62c-32.22-33.08-57.87-70.83-76.36-112.44-18.57-41.8-29.41-86.25-32.28-132.24Z" />
-            <path d="M1459.07,234.52l-302.81,211.22c-2.21,35.51-9.24,70.29-21.03,103.75-16.66,47.29-42.4,90.7-76.5,129.02-3.62,4.06-7.3,8.03-11.06,11.92l321.02,56.6,90.37-512.52Z" />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1540 747"
-            className="w-28 animate-fade text-neutral"
-            fill="currentColor"
-          >
-            <path d="M1017.98,225.1c82.29,94.79,105.53,275.34-11.54,406.88-118.53,133.18-322.96,142.54-453.36,20.42-131.33-122.99-125.48-314.76-31.89-427.66,65.04,77,147.4,119.09,248.75,119.03,101.04-.06,183.14-41.96,248.04-118.66Z" />
-            <path d="M910.09,140.02c.2,77.49-62.57,140.57-140.05,140.76-77.36.19-140.48-62.78-140.59-140.23C629.34,62.87,691.86.14,769.51,0c77.71-.14,140.38,62.28,140.58,140.02Z" />
-            <path d="M194.11,237.24c.14,53.6-43.28,97.23-96.87,97.36C43.74,334.74.07,291.19,0,237.61c-.07-53.73,43.17-97.12,96.88-97.22,53.75-.09,97.1,43.08,97.24,96.85Z" />
-            <path d="M1345.42,237.24c-.14,53.6,43.28,97.23,96.87,97.36,53.5.13,97.17-43.42,97.24-97,.07-53.73-43.17-97.12-96.88-97.22-53.75-.09-97.1,43.08-97.24,96.85Z" />
-            <path d="M383.28,445.74L80.47,234.52l90.37,512.52,321.08-56.62c-32.22-33.08-57.87-70.83-76.36-112.44-18.57-41.8-29.41-86.25-32.28-132.24Z" />
-            <path d="M1459.07,234.52l-302.81,211.22c-2.21,35.51-9.24,70.29-21.03,103.75-16.66,47.29-42.4,90.7-76.5,129.02-3.62,4.06-7.3,8.03-11.06,11.92l321.02,56.6,90.37-512.52Z" />
-          </svg>
+          />
+          <OatsFXLogo className="w-28 animate-fade text-neutral" />
 
           <p className="font-display tracking-wide text-4xl text-neutral font-semibold italic animate-fade-lg pb-1">
             OatsFX
@@ -125,14 +156,14 @@ const Home: React.FC = () => {
             >
               <BsBehance size={22} />
             </a>
-            <a
+            {/* <a
               href="https://ko-fi.com/OatsFX"
               target="_blank"
               rel="noreferrer"
               className="transition text-neutral hover:text-secondary"
             >
               <SiKofi size={22} />
-            </a>
+            </a> */}
           </div>
         </div>
         <BsArrowDownShort
@@ -162,10 +193,10 @@ const Home: React.FC = () => {
             <p className="w-full lg:w-2/3">
               Known as OatsFX online, I am personally known as Ryan. I am a
               Software Engineering focused Computer Science graduate with a
-              strong passion for developing full-stack applications. I have
-              solid proficiencies in Javascript, Typescript, React, and anything
-              interface related. I strive to improve user interfaces and
-              experiences with their satisfaction in mind. When I'm not telling
+              strong passion for developing projects intended to solve a
+              problem. I have solid proficiencies in Javascript, Typescript,
+              React, and C#. I strive to improve user interfaces and experiences
+              with the user and their satisfaction in mind. When I'm not telling
               computers what to do, I'm playing my favorite games, spending time
               with family, or producing music.
             </p>
@@ -199,79 +230,16 @@ const Home: React.FC = () => {
             <BsFillFileEarmarkCodeFill size={24} />
             PROJECTS
           </p>
-          <div className="flex flex-col lg:flex-row flex-inline gap-4 px-4 py-2">
-            <a
-              href="https://btd6.oatsfx.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="flex flex-col w-full px-4 py-2 outline outline-transparent transition-all ease-in-out border-b border-base-100 hover:outline-1 hover:outline-base-100"
-            >
-              <div className="flex justify-between">
-                <div>
-                  <p className="font-semibold">OatsFX btd6 tool</p>
-                  <p className="text-xs">November 2024 - Present</p>
-                </div>
-                <div className="flex gap-1 flex-wrap justify-end">
-                  <BiLogoTypescript size={36} />
-                  <SiReact size={36} />
-                </div>
-              </div>
-            </a>
-            <a
-              href="https://winnow.oatsfx.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="flex flex-col w-full px-4 py-2 outline outline-transparent transition-all ease-in-out border-b border-base-100 hover:outline-1 hover:outline-base-100"
-            >
-              <div className="flex justify-between">
-                <div>
-                  <p className="font-semibold">winnow</p>
-                  <p className="text-xs">June 2024 - Present</p>
-                </div>
-                <div className="flex gap-1 flex-wrap justify-end">
-                  <BiLogoTypescript size={36} />
-                  <SiReact size={36} />
-                </div>
-              </div>
-            </a>
-            <a
-              href="https://www.levante.dev/"
-              target="_blank"
-              rel="noreferrer"
-              className="flex flex-col w-full px-4 py-2 outline outline-transparent transition-all ease-in-out border-b border-base-100 hover:outline-1 hover:outline-base-100"
-            >
-              <div className="flex justify-between">
-                <div>
-                  <p className="font-semibold">Levante</p>
-                  <p className="text-xs">August 2021 - Present</p>
-                </div>
-                <div className="flex gap-1 flex-wrap justify-end">
-                  <SiCsharp size={36} />
-                </div>
-              </div>
-            </a>
-          </div>
-          <div className="flex flex-col items-center justify-center lg:flex-row flex-inline gap-4 px-4 py-2">
-            <a
-              href="https://dev-analyzer.sivworks.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="flex flex-col w-full lg:w-2/3 px-4 py-2 outline outline-transparent transition-all ease-in-out border-b border-base-100 hover:outline-1 hover:outline-base-100"
-            >
-              <div className="flex justify-between">
-                <div>
-                  <p className="font-semibold">
-                    Sivworks - Investment Web Application
-                  </p>
-                  <p className="text-xs">September 2023 - May 2024</p>
-                </div>
-                <div className="flex gap-1 flex-wrap justify-end">
-                  <BiLogoTypescript size={36} />
-                  <SiReact size={36} />
-                  <BiLogoFirebase size={36} />
-                </div>
-              </div>
-            </a>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 py-2">
+            {projects.map((p, i) => (
+              <ProjectButton
+                name={p.name}
+                dateString={p.dateString}
+                endContent={p.endContent}
+                href={p.href}
+                disabled={p.disabled}
+              />
+            ))}
           </div>
         </div>
         <div className="flex flex-col w-2/3">
@@ -304,9 +272,9 @@ const Home: React.FC = () => {
           <div className="flex flex-col lg:flex-row flex-inline gap-4 px-4 py-2">
             <p>
               I've used my platforms for good and raised over{" "}
-              <span className="text-primary font-bold">$5,000</span> for the{" "}
+              <span className="text-primary font-bold">$6,000</span> for the{" "}
               <a
-                href="https://tiltify.com/@levante/profile"
+                href="https://tiltify.com/@oatsfx/profile"
                 target="_blank"
                 rel="noreferrer"
                 className="text-secondary"

@@ -24,7 +24,7 @@ module.exports = {
         },
         moveFadeIn: {
           "0%, 20%": { transform: "translateY(2rem)", opacity: 0 },
-          "100%": { transform: "translateY(-1rem)", opacity: 0.03 },
+          "100%": { transform: "translateY(-1rem)", opacity: 0.05 },
         },
       },
       fontWeight: {
