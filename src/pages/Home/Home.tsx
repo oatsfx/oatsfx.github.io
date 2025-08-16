@@ -30,12 +30,26 @@ import {
   SiCplusplus,
   SiJira,
   SiKofi,
+  SiVite,
 } from "react-icons/si";
 
 const Home: React.FC = () => {
   const [scroll, setScroll] = useState<number>(0);
 
   const projects = [
+    {
+      name: "BTD6 Roundle",
+      dateString: "August 2025 - Present",
+      endContent: (
+        <>
+          <BiLogoTypescript size={36} />
+          <SiVite size={36} />
+          <SiReact size={36} />
+        </>
+      ),
+      href: "https://roundle.oatsfx.com/",
+      disabled: false,
+    },
     {
       name: "OatsFX btd6 tool",
       dateString: "November 2024 - Present",
@@ -272,7 +286,7 @@ const Home: React.FC = () => {
           <div className="flex flex-col lg:flex-row flex-inline gap-4 px-4 py-2">
             <p>
               I've used my platforms for good and raised over{" "}
-              <span className="text-primary font-bold">$6,000</span> for the{" "}
+              <span className="text-primary font-bold">$7,000</span> for the{" "}
               <a
                 href="https://tiltify.com/@oatsfx/profile"
                 target="_blank"
