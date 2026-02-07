@@ -39,7 +39,7 @@ const Home: React.FC = () => {
   const projects = [
     {
       name: "BTD6 Roundle",
-      dateString: "August 2025 - Present",
+      dateString: "August 2025 - November 2025",
       endContent: (
         <>
           <BiLogoTypescript size={36} />
@@ -51,7 +51,7 @@ const Home: React.FC = () => {
       disabled: false,
     },
     {
-      name: "OatsFX btd6 tool",
+      name: "oatsfx btd6 tool",
       dateString: "November 2024 - Present",
       endContent: (
         <>
@@ -64,7 +64,7 @@ const Home: React.FC = () => {
     },
     {
       name: "winnow",
-      dateString: "June 2024 - Present",
+      dateString: "June 2024 - January 2025",
       endContent: (
         <>
           <BiLogoTypescript size={36} />
@@ -134,9 +134,7 @@ const Home: React.FC = () => {
           </p>
           <div className="flex flex-col md:flex-row gap-4 animate-fade-xl px-8 text-nowrap">
             <p className="italic text-neutral">Software Engineer</p>
-            <p className="italic text-neutral">Computer Scientist</p>
             <p className="italic text-neutral">Graphic/Motion Designer</p>
-            <p className="italic text-neutral">Music Producer</p>
           </div>
           <div className="flex gap-4 animate-fade-xl items-center">
             <a
@@ -151,7 +149,7 @@ const Home: React.FC = () => {
               href="https://youtube.com/@oatsfx"
               target="_blank"
               rel="noreferrer"
-              className="transition text-neutral hover:text-secondary"
+              className="transition text-neutral hover:text-primary"
             >
               <BsYoutube size={22} />
             </a>
@@ -204,16 +202,21 @@ const Home: React.FC = () => {
             ABOUT
           </p>
           <div className="flex flex-col lg:flex-row gap-4 px-4 py-2 items-center lg:items-start justify-between">
-            <p className="w-full lg:w-2/3">
-              Known as OatsFX online, I am personally known as Ryan. I am a
-              Software Engineering focused Computer Science graduate with a
-              strong passion for developing projects intended to solve a
-              problem. I have solid proficiencies in Javascript, Typescript,
-              React, and C#. I strive to improve user interfaces and experiences
-              with the user and their satisfaction in mind. When I'm not telling
-              computers what to do, I'm playing my favorite games, spending time
-              with family, or producing music.
-            </p>
+            <div className="flex flex-col gap-2">
+              <p className="w-full lg:w-2/3">
+                I am a Software Engineering focused Computer Science graduate
+                with a strong passion for developing projects intended to solve
+                a problem. I have solid proficiencies in Javascript, Typescript,
+                React, and C#. I strive to improve user interfaces and
+                experiences with the user and their satisfaction in mind. When
+                I'm not telling computers what to do, I'm playing my favorite
+                games, spending time with family, or producing music.
+              </p>
+              <p className="w-full lg:w-2/3">
+                I was previously involved in professional Graphic Design and
+                creating brands for streamers in the gaming community.
+              </p>
+            </div>
             <div className="flex flex-col items-center gap-1">
               <div className="flex gap-2">
                 <BiLogoJavascript size={56} />
@@ -262,31 +265,25 @@ const Home: React.FC = () => {
             ACHIEVEMENTS
           </p>
 
-          <div className="flex flex-col lg:flex-row flex-inline gap-4 px-4 py-2">
-            <p>
-              Recipient of ASU's Ira A. Fulton School of Engineering's{" "}
-              <span className="text-primary font-bold">Moeur Award</span> for{" "}
-              <span className="text-secondary">
-                outstanding academic achievement
-              </span>
-              .
+          <div className="flex lg:flex-row flex-inline gap-4 px-4 py-2">
+            <p className="w-full">
+              Recipient of a university engineering{" "}
+              <span className="text-primary font-bold">school award</span> for{" "}
+              <span className="text-secondary">outstanding</span>,{" "}
+              <span className="text-secondary">top-of-the-class</span>,{" "}
+              <span className="text-secondary">academic achievement</span>.
             </p>
-            <p>
-              Made the ASU's Ira A. Fulton School of Engineering{" "}
+            <p className="w-full">
+              I was listed on my university's{" "}
               <span className="text-primary font-bold">Dean's List</span> in
-              eight consecutive semesters for{" "}
-              <span className="text-secondary">outstanding academics</span>.
-            </p>
-            <p>
-              In high school, my VeX Robotics team qualified for the{" "}
-              <span className="text-primary font-bold">Worlds competition</span>{" "}
-              during the 2019-2020 school year.
+              eight consecutive semesters in recognition of{" "}
+              <span className="text-secondary">academic excellence</span>.
             </p>
           </div>
-          <div className="flex flex-col lg:flex-row flex-inline gap-4 px-4 py-2">
-            <p>
-              I've used my platforms for good and raised over{" "}
-              <span className="text-primary font-bold">$7,000</span> for the{" "}
+          <div className="flex lg:flex-row flex-inline gap-4 px-4 py-2">
+            <p className="w-full">
+              I've raised over{" "}
+              <span className="text-primary font-bold">$8,000</span> for the{" "}
               <a
                 href="https://tiltify.com/@oatsfx/profile"
                 target="_blank"
@@ -297,10 +294,15 @@ const Home: React.FC = () => {
               </a>{" "}
               charity.
             </p>
-            <p>
-              My artistic creations have been{" "}
-              <span className="text-primary font-bold">featured</span> in
-              numerous Bungie-authored blog posts.
+            <p className="w-full">
+              Qualified for the{" "}
+              <span className="text-primary font-bold">
+                World's competition
+              </span>{" "}
+              during high school robotics for{" "}
+              <span className="text-secondary">engineering</span>,{" "}
+              <span className="text-secondary">programming</span>, and{" "}
+              <span className="text-secondary">team-building skills</span>.
             </p>
           </div>
         </div>
