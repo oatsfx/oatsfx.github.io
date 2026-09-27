@@ -206,15 +206,15 @@ const Home: React.FC = () => {
               <p className="w-full lg:w-2/3">
                 I am a Software Engineering focused Computer Science graduate
                 with a strong passion for developing projects intended to solve
-                a problem. I have solid proficiencies in Javascript, Typescript,
-                React, and C#. I strive to improve user interfaces and
-                experiences with the user and their satisfaction in mind. When
-                I'm not telling computers what to do, I'm playing my favorite
-                games, spending time with family, or producing music.
+                a problem. I have solid proficiencies in JavaScript, TypeScript,
+                React.JS, and C#. I strive to improve user interfaces and
+                experiences with user satisfaction in mind. When I'm not telling
+                computers what to do, I'm playing my favorite games, spending
+                time with family, or producing music.
               </p>
               <p className="w-full lg:w-2/3">
                 I was previously involved in professional Graphic Design and
-                creating brands for streamers in the gaming community.
+                creating brands for streamers in many gaming communities.
               </p>
             </div>
             <div className="flex flex-col items-center gap-1">
@@ -283,7 +283,7 @@ const Home: React.FC = () => {
           <div className="flex lg:flex-row flex-inline gap-4 px-4 py-2">
             <p className="w-full">
               I've raised over{" "}
-              <span className="text-primary font-bold">$8,000</span> for the{" "}
+              <span className="text-primary font-bold">$12,000</span> for the{" "}
               <a
                 href="https://tiltify.com/@oatsfx/profile"
                 target="_blank"
